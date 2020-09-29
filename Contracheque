@@ -1,0 +1,12 @@
+a = float(input('Quanto você ganha por hora?'))
+b = float(input('Quantas horas foram trabalhadas?'))
+c = a * b 
+d = (c * 11) / 1000 #Imposto de renda
+e = (c * 8) / 1000 #INSS
+f = (c * 5) / 1000 #SINDICATO
+g = c - (d + e + f )
+print("""Seu salário bruto é:{:.2f}'
+seu imposto de renda é:{:.2f}
+seu INSS é: {:.2f}
+seu sindicato é: {:.2f}
+seu salário liquido é:{:.2f}""".format(c, d, e ,f, g))
